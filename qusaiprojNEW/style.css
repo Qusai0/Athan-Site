@@ -1,0 +1,224 @@
+.center {
+
+    text-align: center;
+
+
+}
+
+p {
+    font-size: 60px
+}
+
+h2 {
+    font-size: 70px
+}
+
+.content {
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
+
+    /* background-color: rgb(24, 165, 88); */
+    
+
+}
+
+select {
+    border: green solid 2px;
+    border-radius: 5px;
+    background-color: #04AA6D;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    padding: 16px;
+    font-size: 24px;
+  
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #4CAF50;
+    border: 2px solid rgba(172, 255, 47, 0.294);
+    border-radius: 12px;
+    padding: 5px;
+    margin: 0 auto;
+
+    color: white;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+
+}
+
+.text {
+  background-color: #29bc47;
+    border: #43d660 solid;
+    border-radius: 15px 10px;
+    margin: 2%
+}
+
+.text2 {
+    
+    background-color:  #43d660
+
+    ;
+    border: #4ee16b solid;
+    border-radius: 15px 10px;
+    margin: 2%;
+}
+
+:root {
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+}
+
+* {
+  padding: 0;
+  margin: 5;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cfafaf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 200px;
+}
+
+label {
+  position: absolute;
+  width: 80%;
+  height: 100px;
+  background-color: var(--dark);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+input {
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+input:checked ~ .slider {
+  background-color: var(--light);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: -16px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  box-shadow: inset 28px -4px 0px 0px var(--light);
+  background-color: var(--dark);
+  transition: 0.3s;
+}
+
+input:checked ~ .slider::before {
+  transform: translateX(95px);
+  background-color: var(--dark);
+  box-shadow: none;
+}
+
+a {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  top: 150px;
+  left: 20px;
+  font-size: 10px;
+  text-decoration: none;
+  color: var(--link);
+  font-weight: bold;
+  text-align: center;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.bg  {
+    background-image: url('https://getwallpapers.com/wallpaper/full/7/5/9/814192-vertical-wallpaper-mosque-2560x1600-for-ios.jpg');
+   position: fixed;
+  top: -5%;
+  left: -5%;
+  right: -5%;
+  z-index: 1;
+  display: block;
+  width:110%;
+  height:110%;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+  .dark-modebg{
+    background-image: url('https://florianziegler.com/wp-content/uploads/2015/05/sheikh_zayed_grand_mosque_16_DSF4042.jpg') ;
+
+
+
+  }
+  
+ 
+.Tdarkmode{
+
+  background-color: #092a45;
+  color: cadetblue;
+  border: #164f7b solid;
+}
+
+
+
+
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+
+
